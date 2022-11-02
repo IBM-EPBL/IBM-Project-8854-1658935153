@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample registration page</title>
+    <meta charset="UTF-8">
+    <h1>Registration Page</h1><br>
+    <script type="text/javascript">
+     function callvalue(){
+       var n=document.getElementById("name").value;
+       var email=document.getElementById("email").value;
+       var mobile=document.getElementById("no").value; 
+       document.writeln("<b>Your info:<b>"+"<br><br>");
+       document.writeln("Name:"+n+"<br><br>");
+       document.writeln("Your email:"+email+"<br><br>");
+       document.writeln("Your mobile no:"+mobile);
+    }
+    </script>
+</head>
+<body style="background-color:rgb(230, 228, 228);text-align:center;">
+    <form onsubmit="callvalue()">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter username" id="name" size="15"required><br><br>
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Enter email" id="email" size="15"required><br><br>
+        <label><b>Phone Number</b></label>
+        <input type="number" placeholder="Enter phone number" id="no" size="15" required><br><br>
+        <input type="submit" id="mySubmit" value="Register" required><br><br>
+    </form>
+</body>
+</html>
